@@ -1,0 +1,557 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+
+- rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+  steps:
+  - intent: nlu_fallback
+  - action: utter_please_rephrase
+
+- rule: out-of-scope
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope
+
+
+
+
+- rule: Programming Introduction
+  steps:
+  - intent: ask_programming_introduction
+  - action: utter_programming_introduction
+
+- rule: Software Development Stages
+  steps:
+  - intent: ask_software_development_stages
+  - action: utter_software_development_stages
+
+- rule: C# Language
+  steps:
+  - intent: ask_csharp_language
+  - action: utter_csharp_language
+
+- rule: .NET Framework
+  steps:
+  - intent: ask_dotnet_framework
+  - action: utter_dotnet_framework
+
+
+- rule: Visual Studio IDE
+  steps:
+  - intent: ask_visual_studio_ide
+  - action: utter_visual_studio_ide
+
+- rule: Decompiling Code
+  steps:
+  - intent: ask_decompiling_code
+  - action: utter_decompiling_code
+
+- rule: C# on Different Platforms
+  steps:
+  - intent: ask_csharp_on_different_platforms
+  - action: utter_csharp_on_different_platforms
+
+- rule: Primitive Types
+  steps:
+  - intent: ask_primitive_types
+  - action: utter_primitive_types
+
+- rule: Variables
+  steps:
+  - intent: ask_variables
+  - action: utter_variables
+
+- rule: Data Types
+  steps:
+  - intent: ask_data_types
+  - action: utter_data_type
+
+- rule: Literals
+  steps:
+  - intent: ask_literals
+  - action: utter_literals
+
+- rule: Operators
+  steps:
+  - intent: ask_operators
+  - action: utter_operators
+
+- rule: Type Conversion
+  steps:
+  - intent: ask_type_conversion
+  - action: utter_type_conversion
+
+- rule: Expressions
+  steps:
+  - intent: ask_expressions
+  - action: utter_expressions
+
+- rule: Console Input/Output
+  steps:
+  - intent: ask_console_io
+  - action: utter_console_input_output
+
+- rule: Conditional Statements
+  steps:
+  - intent: ask_conditional_statements
+  - action: utter_conditional_statements
+
+- rule: Comparison Operators
+  steps:
+  - intent: ask_comparison_operators
+  - action: utter_comparison_operators
+
+- rule: if Statements
+  steps:
+  - intent: ask_if_statements
+  - action: utter_if_statements
+
+- rule: switch-case Statements
+  steps:
+  - intent: ask_switch_case_statements
+  - action: utter_switch_case_statements
+
+- rule: Loops
+  steps:
+  - intent: ask_loops
+  - action: utter_loops
+
+- rule: while Loops
+  steps:
+  - intent: ask_while_loops
+  - action: utter_while_loops
+
+- rule: do-while Loops
+  steps:
+  - intent: ask_do_while_loops
+  - action: utter_do_while_loops
+
+- rule: for Loops
+  steps:
+  - intent: ask_for_loops
+  - action: utter_for_loops
+
+- rule: foreach Loops
+  steps:
+  - intent: ask_foreach_loops
+  - action: utter_foreach_loops
+
+- rule: Nested Loops
+  steps:
+  - intent: ask_nested_loops
+  - action: utter_nested_loops
+
+- rule: Arrays
+  steps:
+  - intent: ask_arrays
+  - action: utter_arrays
+
+- rule: Declaration and Allocation
+  steps:
+  - intent: ask_declaration_allocation
+  - action: utter_declaration_and_allocation
+
+- rule: Accessing Elements
+  steps:
+  - intent: ask_accessing_elements
+  - action: utter_accessing_elements
+
+- rule: Reading from Console
+  steps:
+  - intent: ask_reading_from_console
+  - action: utter_reading_from_console
+
+- rule: Printing to Console
+  steps:
+  - intent: ask_printing_to_console
+  - action: utter_printing_to_console
+
+- rule: Iteration through Arrays
+  steps:
+  - intent: ask_iteration_through_arrays
+  - action: utter_iteration_through_arrays
+
+- rule: Multidimensional Arrays
+  steps:
+  - intent: ask_multidimensional_arrays
+  - action: utter_multidimensional_arrays
+
+- rule: Arrays of Arrays
+  steps:
+  - intent: ask_arrays_of_arrays
+  - action: utter_arrays_of_arrays
+
+- rule: Numeral Systems
+  steps:
+  - intent: ask_numeral_systems
+  - action: utter_numeral_systems
+
+- rule: History of Numeral Systems
+  steps:
+  - intent: ask_history_of_numeral_systems
+  - action: utter_history_of_numeral_systems
+
+- rule: Representation of Numbers
+  steps:
+  - intent: ask_representation_of_numbers
+  - action: utter_representation_of_numbers
+
+- rule: Subroutines 
+  steps:
+  - intent: ask_subroutines
+  - action: utter_subroutines
+
+- rule: Methods
+  steps:
+  - intent: ask_methods
+  - action: utter_methods
+
+- rule: Method Declaration
+  steps:
+  - intent: ask_method_declaration
+  - action: utter_method_declaration
+
+- rule: Implementing Methods
+  steps:
+  - intent: ask_implementing_methods
+  - action: utter_implementing_methods
+
+- rule: Invoking Methods
+  steps:
+  - intent: ask_invoking_methods
+  - action: utter_invoking_methods
+
+- rule: Parameters in Methods
+  steps:
+  - intent: ask_parameters_in_methods
+  - action: utter_parameters_in_methods
+
+- rule: Returning Values from Methods
+  steps:
+  - intent: ask_returning_values_from_methods
+  - action: utter_returning_values_from_methods
+
+- rule: Recursion
+  steps:
+  - intent: ask_recursion
+  - action: utter_recursion
+
+- rule: Direct and Indirect Recursion
+  steps:
+  - intent: ask_direct_and_indirect_recursion
+  - action: utter_direct_and_indirect_recursion
+
+- rule: Recursive Methods
+  steps:
+  - intent: ask_recursive_methods
+  - action: utter_recursive_methods
+
+- rule: Factorial Calculation
+  steps:
+  - intent: ask_factorial_calculation
+  - action: utter_factorial_calculation
+
+- rule: Creating and Using Objects
+  steps:
+  - intent: ask_creating_and_using_objects
+  - action: utter_creating_and_using_objects
+
+- rule: Classes and Objects
+  steps:
+  - intent: ask_classes_and_objects
+  - action: utter_classes_and_objects
+
+- rule: Namespaces
+  steps:
+  - intent: ask_namespaces
+  - action: utter_namespaces
+
+- rule: Exception Handling
+  steps:
+  - intent: ask_exception_handling
+  - action: utter_exception_handling
+
+- rule: Exceptions Hierarchy
+  steps:
+  - intent: ask_exceptions_hierarchy
+  - action: utter_exceptions_hierarchy
+
+- rule: Throwing and Catching Exceptions
+  steps:
+  - intent: ask_throwing_and_catching_exceptions
+  - action: utter_throwing_and_catching_exceptions
+
+- rule: try-finally Construct
+  steps:
+  - intent: ask_try_finally_construct
+  - action: utter_try_finally_construct
+
+- rule: IDisposable and using
+  steps:
+  - intent: ask_idisposable_and_using
+  - action: utter_idisposable_and_using
+
+- rule: Advantages of Using Exceptions
+  steps:
+  - intent: ask_advantages_of_using_exceptions
+  - action: utter_advantages_of_using_exceptions
+
+
+
+- rule: Strings
+  steps:
+  - intent: ask_strings
+  - action: utter_strings
+
+- rule: String Operations
+  steps:
+  - intent: ask_string_operations
+  - action: utter_string_operations
+
+- rule: StringBuilder Class
+  steps:
+  - intent: ask_stringbuilder_class
+  - action: utter_stringbuilder_class
+
+- rule: String Formatting
+  steps:
+  - intent: ask_string_formatting
+  - action: utter_string_formatting
+
+- rule: Custom Classes
+  steps:
+  - intent: ask_custom_classes
+  - action: utter_custom_classes
+
+- rule: Modifiers and Access Levels
+  steps:
+  - intent: ask_modifiers_and_access_levels
+  - action: utter_modifiers_and_access_levels
+
+- rule: Fields
+  steps:
+  - intent: ask_fields
+  - action: utter_fields
+
+- rule: Methods in Classes
+  steps:
+  - intent: ask_methods_in_classes
+  - action: utter_methods_in_classes
+
+- rule: Constructors
+  steps:
+  - intent: ask_constructors
+  - action: utter_constructors
+
+- rule: Properties
+  steps:
+  - intent: ask_properties
+  - action: utter_properties
+
+- rule: Static Classes and Members
+  steps:
+  - intent: ask_static_classes_and_members
+  - action: utter_static_classes_and_members
+
+- rule: Structures
+  steps:
+  - intent: ask_structures
+  - action: utter_structures
+
+- rule: Enumerations
+  steps:
+  - intent: ask_enumerations
+  - action: utter_enumerations
+
+- rule: Inner Classes
+  steps:
+  - intent: ask_inner_classes
+  - action: utter_inner_classes
+
+- rule: Generics
+  steps:
+  - intent: ask_generics
+  - action: utter_generics
+
+- rule: Text Files
+  steps:
+  - intent: ask_text_files
+  - action: utter_text_files
+
+- rule: Streams
+  steps:
+  - intent: ask_streams
+  - action: utter_streams
+
+- rule: Reading from Text Files
+  steps:
+  - intent: ask_reading_from_text_files
+  - action: utter_reading_from_text_files
+
+- rule: Writing to Text Files
+  steps:
+  - intent: ask_writing_to_text_files
+  - action: utter_writing_to_text_files
+
+- rule: Input/Output Exception Handling
+  steps:
+  - intent: ask_input_output_exception_handling
+  - action: utter_input_output_exception_handling
+
+- rule: Linear Data Structures
+  steps:
+  - intent: ask_linear_data_structures
+  - action: utter_linear_data_structures
+
+- rule: Abstract Data Structures
+  steps:
+  - intent: ask_abstract_data_structures
+  - action: utter_abstract_data_structures
+
+- rule: List Data Structures
+  steps:
+  - intent: ask_list_data_structures
+  - action: utter_list_data_structures
+
+- rule: Trees
+  steps:
+  - intent: ask_trees
+  - action: utter_trees
+
+- rule: Tree Data Structures
+  steps:
+  - intent: ask_tree_data_structures
+  - action: utter_tree_data_structures
+
+- rule: Graphs
+  steps:
+  - intent: ask_graphs
+  - action: utter_graphs
+
+- rule: Dictionary Data Structure
+  steps:
+  - intent: ask_dictionary_data_structure
+  - action: utter_dictionary_data_structure
+
+- rule: Hash-Tables
+  steps:
+  - intent: ask_hash_tables
+  - action: utter_hash_tables
+
+- rule: Set Data Structure
+  steps:
+  - intent: ask_set_data_structure
+  - action: utter_set_data_structure
+
+- rule: Data Structures Importance
+  steps:
+  - intent: ask_data_structures_importance
+  - action: utter_data_structures_importance
+
+- rule: Algorithm Complexity
+  steps:
+  - intent: ask_algorithm_complexity
+  - action: utter_algorithm_complexity
+
+- rule: Comparison of Data Structures
+  steps:
+  - intent: ask_comparison_of_data_structures
+  - action: utter_comparison_of_data_structures
+
+- rule: When to Use Specific Data Structures
+  steps:
+  - intent: ask_when_to_use_specific_data_structures
+  - action: utter_when_to_use_specific_data_structures
+
+- rule: Object-Oriented Programming
+  steps:
+  - intent: ask_object_oriented_programming
+  - action: utter_object_oriented_programming
+
+- rule: Fundamental OOP Principles
+  steps:
+  - intent: ask_fundamental_oop_principles
+  - action: utter_fundamental_oop_principles
+
+- rule: Inheritance
+  steps:
+  - intent: ask_inheritance
+  - action: utter_inheritance
+
+- rule: Abstraction
+  steps:
+  - intent: ask_abstraction
+  - action: utter_abstraction
+
+- rule: Encapsulation
+  steps:
+  - intent: ask_encapsulation
+  - action: utter_encapsulation
+
+- rule: Polymorphism
+  steps:
+  - intent: ask_polymorphism
+  - action: utter_polymorphism
+
+- rule: Cohesion and Coupling
+  steps:
+  - intent: ask_cohesion_and_coupling
+  - action: utter_cohesion_and_coupling
+
+- rule: Object-Oriented Modeling
+  steps:
+  - intent: ask_object_oriented_modeling
+  - action: utter_object_oriented_modeling
+
+- rule: UML Notation
+  steps:
+  - intent: ask_uml_notation
+  - action: utter_uml_notation
+
+- rule: Design Patterns
+  steps:
+  - intent: ask_design_patterns
+  - action: utter_design_patterns
+
+- rule: stack
+  steps:
+  - intent: ask_stack
+  - action: utter_stack
+
+
+- rule: queue
+  steps:
+  - intent: ask_queue
+  - action: utter_queue
+
+
+
+- rule: integer
+  steps:
+  - intent: ask_integer
+  - action: utter_integer
+
+- rule: float
+  steps:
+  - intent: ask_float
+  - action: utter_float
+
+- rule: keyword
+  steps:
+  - intent: ask_keyword
+  - action: utter_keyword
+
+
+
+  

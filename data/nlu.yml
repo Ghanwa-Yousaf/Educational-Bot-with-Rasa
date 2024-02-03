@@ -1,0 +1,1450 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - okay
+    - ok
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: nlu_fallback
+  examples: |
+    - what is C++
+    - what is java
+- intent: out_of_scope
+  examples: |
+    - I want to order food
+    - What is 2 + 2?
+    - Who's the US President?
+- intent: ask_programming_introduction
+  examples: |
+    - what is [Programming Introduction](Programming Introduction) in c#
+    - elaborate [Programming Introduction](Programming Introduction)
+    - explain the concept of [Basics of Programming](Programming Introduction) in programming
+    - explain the concept of [Programming Introduction](Programming Introduction)
+    - what are [Programming Introduction](Programming Introduction)
+    - can you help me with [Programming Introduction](Programming Introduction)
+    - i want to learn about [Programming Overview](Programming Introduction)
+    - describe [Programming Introduction](Programming Introduction)
+    - define [Programming Introduction](Programming Introduction)
+    - could you elaborate the concept of [Programming Introduction](Programming Introduction)
+    - tell me about the concept of [Programming Introduction](Programming Introduction)
+- intent: ask_software_development_stages
+  examples: |
+    - what is [Software Development Stages](Software Development Stages) in c#
+    - elaborate [Software Development Stages](Software Development Stages)
+    - explain the concept of [Software Development Stages](Software Development Stages) in programming
+    - explain the concept of [Software Development Stages](Software Development Stages)
+    - what are [Software Development Stages](Software Development Stages)
+    - can you help me with [Software Development Stages](Software Development Stages)
+    - i want to learn about [Software Development Stages](Software Development Stages)
+    - describe [Software Development Stages](Software Development Stages)
+    - define [Software Development Stages](Software Development Stages)
+    - could you elaborate the concept of [Software Development Stages](Software Development Stages)
+    - tell me about the concept of [Software Development Stages](Software Development Stages)
+- intent: ask_csharp_language
+  examples: |
+    - what is [C#](C# Language)
+    - elaborate [C# Language](C# Language)
+    - explain the concept of [csharp](C# Language) in programming
+    - explain the concept of [C# Coding](C# Language)
+    - what are [C# Languages](C# Language)
+    - can you help me with [C sharp](C# Language)
+    - i want to learn about [C# Language](C# Language)
+    - describe [C#](C# Language)
+    - define [C# Language](C# Language)
+    - could you elaborate the concept of [C# Language](C# Language)
+    - tell me about the concept of [C# Language](C# Language)
+    - could you elaborate the concept of c#
+    - where to learn about [c#](C# Language)
+    - i would like to know about [c#](C# Language)
+- intent: ask_dotnet_framework
+  examples: |
+    - what is [.NET Framework](.NET Framework) in c#
+    - elaborate [NET Framework](.NET Framework)
+    - explain the concept of [dot net](.NET Framework) in programming
+    - explain the concept of [.NET Framework](.NET Framework)
+    - what are [.NET Frameworks](.NET Framework)
+    - can you help me with [.NET Framework](.NET Framework)
+    - i want to learn about [.NET Framework](.NET Framework)
+    - describe [.NET Runtime](.NET Framework)
+    - define [dotnet](.NET Framework)
+    - could you elaborate the concept of [.NET Framework](.NET Framework)
+    - tell me about the concept of [.NET Framework](.NET Framework)
+- intent: ask_visual_studio_ide
+  examples: |
+    - what is [Visual Studio IDE](Visual Studio IDE) in c#
+    - elaborate [Visual Studio IDE](Visual Studio IDE)
+    - explain the concept of [Visual Studio IDE](Visual Studio IDE) in programming
+    - explain the concept of [Visual Studio IDE](Visual Studio IDE)
+    - what are [VS code](Visual Studio IDE)
+    - can you help me with [Visual Studio IDE](Visual Studio IDE)
+    - i want to learn about [Visual Studio IDE](Visual Studio IDE)
+    - describe [Visual Studio IDE](Visual Studio IDE)
+    - define [ide](Visual Studio IDE)
+    - could you elaborate the concept of [Visual Studio IDE](Visual Studio IDE)
+    - tell me about the concept of [Visual Studio IDE](Visual Studio IDE)
+- intent: ask_decompiling_code
+  examples: |
+    - what is [Decompiling Code](Decompiling Code) in c#
+    - elaborate [Decompiling Code](Decompiling Code)
+    - explain the concept of [Decompiling Code](Decompiling Code) in programming
+    - explain the concept of [Code Reverse Engineering](Decompiling Code)
+    - what are [Decompiling Code](Decompiling Code)
+    - can you help me with [Decompiling Code](Decompiling Code)
+    - i want to learn about [Decompiling Code](Decompiling Code)
+    - describe [coding analysis](Decompiling Code)
+    - define [code analysis](Decompiling Code)
+    - could you elaborate the concept of [Decompiling Code](Decompiling Code)
+    - tell me about the concept of [Decompiling Code](Decompiling Code)
+- intent: ask_csharp_on_different_platforms
+  examples: |
+    - what is [C# on Different Platform](C# on Different Platforms) in c#
+    - elaborate [C# on Different Platforms](C# on Different Platforms)
+    - explain the concept of [Platform](C# on Different Platforms) in programming
+    - explain the concept of [C# on Different Platforms](C# on Different Platforms)
+    - what are [C# on Different Platforms](C# on Different Platforms)
+    - can you help me with [C# on Different Platforms](C# on Different Platforms)
+    - i want to learn about [C# on Different Platforms](C# on Different Platforms)
+    - describe [Different Platforms c#](C# on Different Platforms)
+    - define [C# on Different Platforms](C# on Different Platforms)
+    - could you elaborate the concept of [C# on Different Platforms](C# on Different Platforms)
+    - tell me about the concept of [C# on Different Platforms](C# on Different Platforms)
+- intent: ask_primitive_types
+  examples: |
+    - what is [Primitive Type](Primitive Types) in c#
+    - elaborate [Fundamental Data Types](Primitive Types)
+    - explain the concept of [Primitive Types](Primitive Types) in programming
+    - explain the concept of [Primitive Types](Primitive Types)
+    - what are [Primitive Types](Primitive Types)
+    - can you help me with [Primitive Types](Primitive Types)
+    - i want to learn about [basic data types](Primitive Types)
+    - describe [Primitive Types](Primitive Types)
+    - define [Primitive Types](Primitive Types)
+    - could you elaborate the concept of [Primitive Types](Primitive Types)
+    - tell me about the concept of [Primitive Types](Primitive Types)
+- intent: ask_variables
+  examples: |
+    - what is [Variable](Variables) in c#
+    - elaborate [Variables](Variables)
+    - explain the concept of [Variables](Variables) in programming
+    - explain the concept of [Variables](Variables)
+    - what are [Variable Assignments](Variables)
+    - can you help me with [Variables](Variables)
+    - i want to learn about [Variables](Variables)
+    - describe [Variables](Variables)
+    - define [Variable](Variables)
+    - could you elaborate the concept of [Variables](Variables)
+    - tell me about the concept of [Variables](Variables)
+- intent: ask_data_types
+  examples: |
+    - what is [Data Type](Data Types) in c#
+    - elaborate [Data Types](Data Types)
+    - explain the concept of [Data Types](Data Types) in programming
+    - explain the concept of [Data Types](Data Types)
+    - what are [Literal Representation](Data Types)
+    - can you help me with [Data Types](Data Types)
+    - i want to learn about [Data Types](Data Types)
+    - describe [Data Types](Data Types)
+    - define [Data Types](Data Types)
+    - could you elaborate the concept of [Data Types](Data Types)
+    - tell me about the concept of [Data Types](Data Types)
+- intent: ask_literals
+  examples: |
+    - what is [Literal](Literals) in c#
+    - elaborate [Literals](Literals)
+    - explain the concept of [Literals](Literals) in programming
+    - explain the concept of [Literals](Literals)
+    - what are [Literals](Literals)
+    - can you help me with [Literals](Literals)
+    - i want to learn about [Literals](Literals)
+    - describe [Literals](Literals)
+    - define [Literals](Literals)
+    - could you elaborate the concept of [Literals](Literals)
+    - tell me about the concept of [Literals](Literals)
+- intent: ask_operators
+  examples: |
+    - what is [Operator](Operators) in c#
+    - elaborate [Operators](Operators)
+    - explain the concept of [Operators](Operators) in programming
+    - explain the concept of [Operator](Operators)
+    - what are [Operators](Operators)
+    - can you help me with [Operators](Operators)
+    - i want to learn about [Operators](Operators)
+    - describe [Operators](Operators)
+    - define [Operators](Operators)
+    - could you elaborate the concept of [Operators](Operators)
+    - tell me about the concept of [Operators](Operators)
+- intent: ask_type_conversion
+  examples: |
+    - what is [Type Conversion](Type Conversion) in c#
+    - elaborate [Type Conversion](Type Conversion)
+    - explain the concept of [Type Conversion](Type Conversion) in programming
+    - explain the concept of [Type Conversion](Type Conversion)
+    - what are [Type Conversion](Type Conversion)
+    - can you help me with [Type Conversion](Type Conversion)
+    - i want to learn about [Type Conversion](Type Conversion)
+    - describe [Type Conversion](Type Conversion)
+    - define [Type Conversion](Type Conversion)
+    - could you elaborate the concept of [Type Conversion](Type Conversion)
+    - tell me about the concept of [Type Conversion](Type Conversion)
+- intent: ask_expressions
+  examples: |
+    - what is [Expression](Expressions) in c#
+    - elaborate [Expressions](Expressions)
+    - explain the concept of [Expressions](Expressions) in programming
+    - explain the concept of [Expressions](Expressions)
+    - what are [Expressions](Expressions)
+    - can you help me with [Expressions](Expressions)
+    - i want to learn about [Expressions](Expressions)
+    - describe [Expressions](Expressions)
+    - define [Expressions](Expressions)
+    - could you elaborate the concept of [Expressions](Expressions)
+    - tell me about the concept of [Expressions](Expressions)
+- intent: ask_console_io
+  examples: |
+    - what is [Console Input Output](Console Input/Output) in c#
+    - elaborate [Console Input Output](Console Input/Output)
+    - explain the concept of [Console Input Output](Console Input/Output) in programming
+    - explain the concept of [Console Input Output](Console Input/Output)
+    - what are [Console Input Output](Console Input/Output)
+    - can you help me with [Console Input Output](Console Input/Output)
+    - i want to learn about [Console Input Output](Console Input/Output)
+    - describe [Console Input Output](Console Input/Output)
+    - define [Console IO](Console Input/Output)
+    - could you elaborate the concept of [Console Input Output](Console Input/Output)
+    - tell me about the concept of [Console Input Output](Console Input/Output)
+- intent: ask_conditional_statements
+  examples: |
+    - what is [Conditional Statement](Conditional Statements) in c#
+    - elaborate [Conditional Statements](Conditional Statements)
+    - explain the concept of [Conditional Statements](Conditional Statements) in programming
+    - explain the concept of [Conditional Statements](Conditional Statements)
+    - what are [Conditional Statements](Conditional Statements)
+    - can you help me with [Conditional Statements](Conditional Statements)
+    - i want to learn about [Conditional Statements](Conditional Statements)
+    - describe [Conditional Statements](Conditional Statements)
+    - define [Conditional Statements](Conditional Statements)
+    - could you elaborate the concept of [Conditional Statements](Conditional Statements)
+    - tell me about the concept of [Conditional Statements](Conditional Statements)
+- intent: ask_comparison_operators
+  examples: |
+    - what is [Comparison Operator](Comparison Operators) in c#
+    - elaborate [Comparison Operators](Comparison Operators)
+    - explain the concept of [Comparison Operators](Comparison Operators) in programming
+    - explain the concept of [Comparison Operators](Comparison Operators)
+    - what are [Comparison Operators](Comparison Operators)
+    - can you help me with [Comparison Operators](Comparison Operators)
+    - i want to learn about [Comparison Operator](Comparison Operators)
+    - describe [Comparison Operators](Comparison Operators)
+    - define [Comparison Operator](Comparison Operators)
+    - could you elaborate the concept of [Comparison Operators](Comparison Operators)
+    - tell me about the concept of [Comparison Operators](Comparison Operators)
+- intent: ask_if_statements
+  examples: |
+    - what is [if Statement](if Statements) in c#
+    - elaborate [if Statements](if Statements)
+    - explain the concept of [if Statement](if Statements) in programming
+    - explain the concept of [if Statements](if Statements)
+    - what are [if Statements](if Statements)
+    - can you help me with [if Statement](if Statements)
+    - i want to learn about [if Statement](if Statements)
+    - describe [if Statements](if Statements)
+    - define [if Statements](if Statements)
+    - could you elaborate the concept of [if Statements](if Statements)
+    - tell me about the concept of [if Statements](if Statements)
+- intent: ask_switch_case_statements
+  examples: |
+    - what is [switch case Statement](switch-case Statements) in c#
+    - elaborate [switch case Statements](switch-case Statements)
+    - explain the concept of [switch case Statements](switch-case Statements) in programming
+    - explain the concept of [switch case Statements](switch-case Statements)
+    - what are [switch case Statement](switch-case Statements)
+    - can you help me with [switch case Statements](switch-case Statements)
+    - i want to learn about [switch case Statements](switch-case Statements)
+    - describe [switch case Statements](switch-case Statements)
+    - define [switch case Statements](switch-case Statements)
+    - could you elaborate the concept of [switch case Statements](switch-case Statements)
+    - tell me about the concept of [switch case Statements](switch-case Statements)
+- intent: ask_loops
+  examples: |
+    - what is [Loop](Loops) in c#
+    - elaborate [Loops](Loops)
+    - explain the concept of [Loops](Loops) in programming
+    - explain the concept of [Loops](Loops)
+    - what are [Loops](Loops)
+    - can you help me with [Loops](Loops)
+    - i want to learn about [Loops](Loops)
+    - describe [Loop](Loops)
+    - define [Looping](Loops)
+    - could you elaborate the concept of [Loops](Loops)
+    - tell me about the concept of [Loops](Loops)
+- intent: ask_while_loops
+  examples: |
+    - what is [while Loop](while Loops) in c#
+    - elaborate [while Loops](while Loops)
+    - explain the concept of [while Loops](while Loops) in programming
+    - explain the concept of [while Loop](while Loops)
+    - what are [while Loops](while Loops)
+    - can you help me with [while Loops](while Loops)
+    - i want to learn about [while Loop](while Loops)
+    - describe [while Loops](while Loops)
+    - define [while Loops](while Loops)
+    - could you elaborate the concept of [while Loops](while Loops)
+    - tell me about the concept of [while Loops](while Loops)
+- intent: ask_do_while_loops
+  examples: |
+    - what is [do while Loop](do_while_loops) in c#
+    - elaborate [do while Loops](do_while_loops)
+    - explain the concept of [do while Loops](do_while_loops) in programming
+    - explain the concept of [do while Loops](do_while_loops)
+    - what are [do while Loops](do_while_loops)
+    - can you help me with [do while Loops](do_while_loops)
+    - i want to learn about [do while Loop](do_while_loops)
+    - describe [do while Loops](do_while_loops)
+    - define [do while Loops](do_while_loops)
+    - could you elaborate the concept of [do while Loops](do_while_loops)
+    - tell me about the concept of [do while Loops](do_while_loops)
+- intent: ask_for_loops
+  examples: |
+    - what is [for Loop](for Loops) in c#
+    - elaborate [for Loops](for Loops)
+    - explain the concept of [for Loops](for Loops) in programming
+    - explain the concept of [for Loops](for Loops)
+    - what are [for Loops](for Loops)
+    - can you help me with [for Loops](for Loops)
+    - i want to learn about [for Loops](for Loops)
+    - describe [for Loop](for Loops)
+    - define [for Loops](for Loops)
+    - could you elaborate the concept of [for Loops](for Loops)
+    - tell me about the concept of [for Loop](for Loops)
+- intent: ask_foreach_loops
+  examples: |
+    - what is [foreach Loop](foreach Loops) in c#
+    - elaborate [foreach Loop](foreach Loops)
+    - explain the concept of [foreach Loops](foreach Loops) in programming
+    - explain the concept of [foreach Loops](foreach Loops)
+    - what are [foreach Loops](foreach Loops)
+    - can you help me with [foreach Loop](foreach Loops)
+    - i want to learn about [foreach Loops](foreach Loops)
+    - describe [foreach Loops](foreach Loops)
+    - define [foreach Loops](foreach Loops)
+    - could you elaborate the concept of [foreach Loops](foreach Loops)
+    - tell me about the concept of [foreach Loops](foreach Loops)
+- intent: ask_nested_loops
+  examples: |
+    - what is [Nested Loop](Nested Loops) in c#
+    - elaborate [Nested Loops](Nested Loops)
+    - explain the concept of [Nested Loops](Nested Loops) in programming
+    - explain the concept of [Nested Loops](Nested Loops)
+    - what are [Nested Loops](Nested Loops)
+    - can you help me with [Nested Loops](Nested Loops)
+    - i want to learn about [Nested Loops](Nested Loops)
+    - describe [Nested Loops](Nested Loops)
+    - define [Nested Loop](Nested Loops)
+    - could you elaborate the concept of [Nested Loops](Nested Loops)
+    - tell me about the concept of [Nested Loops](Nested Loops)
+- intent: ask_arrays
+  examples: |
+    - what is [Array](Arrays) in c#
+    - elaborate [Arrays](Arrays)
+    - explain the concept of [Arrays](Arrays) in programming
+    - explain the concept of [Arrays](Arrays)
+    - what are [Arrays](Arrays)
+    - can you help me with [Array](Arrays)
+    - i want to learn about [Arrays](Arrays)
+    - describe [Array](Arrays)
+    - define [Arrays](Arrays)
+    - could you elaborate the concept of [Arrays](Arrays)
+    - tell me about the concept of [Arrays](Arrays)
+- intent: ask_declaration_allocation
+  examples: |
+    - what is [Declaration and Allocation](Declaration and Allocation) in c#
+    - elaborate [Declaration and Allocation](Declaration and Allocation)
+    - explain the concept of [Declaration and Allocation](Declaration and Allocation) in programming
+    - explain the concept of [Declaration and Allocation](Declaration and Allocation)
+    - what are [Declaration and Allocation](Declaration and Allocation)
+    - can you help me with [Declaration and Allocation](Declaration and Allocation)
+    - i want to learn about [Declaration and Allocation](Declaration and Allocation)
+    - describe [Declaration and Allocation](Declaration and Allocation)
+    - define [Declaration and Allocation](Declaration and Allocation)
+    - could you elaborate the concept of [Declaration and Allocation](Declaration and Allocation)
+    - tell me about the concept of [Declaration and Allocation](Declaration and Allocation)
+- intent: ask_accessing_elements
+  examples: |
+    - what is [Accessing Element](Accessing Elements) in c#
+    - elaborate [Accessing Elements](Accessing Elements)
+    - explain the concept of [Accessing Elements](Accessing Elements) in programming
+    - explain the concept of [Accessing Elements](Accessing Elements)
+    - what are [Accessing Elements](Accessing Elements)
+    - can you help me with [Accessing Elements](Accessing Elements)
+    - i want to learn about [Accessing Elements](Accessing Elements)
+    - describe [Accessing Elements](Accessing Elements)
+    - define [Accessing Elements](Accessing Elements)
+    - could you elaborate the concept of [Accessing Elements](Accessing Elements)
+    - tell me about the concept of [Accessing Elements](Accessing Elements)
+- intent: ask_reading_from_console
+  examples: |
+    - what is [Reading from Console](Reading from Console) in c#
+    - elaborate [Reading from Console](Reading from Console)
+    - explain the concept of [Reading from Console](Reading from Console) in programming
+    - explain the concept of [Reading from Console](Reading from Console)
+    - what are [Reading from Console](Reading from Console)
+    - can you help me with [Reading from Console](Reading from Console)
+    - i want to learn about [Reading from Console](Reading from Console)
+    - describe [Reading from Console](Reading from Console)
+    - define [Reading from Console](Reading from Console)
+    - could you elaborate the concept of [Reading from Console](Reading from Console)
+    - tell me about the concept of [Reading from Console](Reading from Console)
+- intent: ask_printing_to_console
+  examples: |
+    - what is [Printing to Console](Printing to Console) in c#
+    - elaborate [Printing to Console](Printing to Console)
+    - explain the concept of [Printing to Console](Printing to Console) in programming
+    - explain the concept of [Printing to Console](Printing to Console)
+    - what are [Printing to Console](Printing to Console)
+    - can you help me with [Printing to Console](Printing to Console)
+    - i want to learn about [Printing to Console](Printing to Console)
+    - describe [Printing to Console](Printing to Console)
+    - define [Printing to Console](Printing to Console)
+    - could you elaborate the concept of [Printing to Console](Printing to Console)
+    - tell me about the concept of [Printing to Console](Printing to Console)
+- intent: ask_iteration_through_arrays
+  examples: |
+    - what is [Iteration through Arrays](Iteration through Arrays) in c#
+    - elaborate [Iteration through Array](Iteration through Arrays)
+    - explain the concept of [Iteration through Arrays](Iteration through Arrays) in programming
+    - explain the concept of [Iteration through Arrays](Iteration through Arrays)
+    - what are [Iteration through Arrays](Iteration through Arrays)
+    - can you help me with [Iteration through Arrays](Iteration through Arrays)
+    - i want to learn about [Iteration through Arrays](Iteration through Arrays)
+    - describe [Iteration through Arrays](Iteration through Arrays)
+    - define [Iteration through Arrays](Iteration through Arrays)
+    - could you elaborate the concept of [Iteration through Arrays](Iteration through Arrays)
+    - tell me about the concept of [Iteration through Arrays](Iteration through Arrays)
+- intent: ask_multidimensional_arrays
+  examples: |
+    - what is [Multidimensional Arrays](Multidimensional Arrays) in c#
+    - elaborate [Multidimensional Array](Multidimensional Arrays)
+    - explain the concept of [Multidimensional Arrays](Multidimensional Arrays) in programming
+    - explain the concept of [Multidimensional Arrays](Multidimensional Arrays)
+    - what are [Multidimensional Arrays](Multidimensional Arrays)
+    - can you help me with [Multidimensional Arrays](Multidimensional Arrays)
+    - i want to learn about [Multidimensional Arrays](Multidimensional Arrays)
+    - describe [Multidimensional Arrays](Multidimensional Arrays)
+    - define [Multidimensional Arrays](Multidimensional Arrays)
+    - could you elaborate the concept of [Multidimensional Arrays](Multidimensional Arrays)
+    - tell me about the concept of [Multidimensional Arrays](Multidimensional Arrays)
+- intent: ask_arrays_of_arrays
+  examples: |
+    - what is [Arrays of Array](Arrays of Arrays) in c#
+    - elaborate [Arrays of Arrays](Arrays of Arrays)
+    - explain the concept of [Arrays of Arrays](Arrays of Arrays) in programming
+    - explain the concept of [Arrays of Arrays](Arrays of Arrays)
+    - what are [Arrays of Arrays](Arrays of Arrays)
+    - can you help me with [Arrays of Arrays](Arrays of Arrays)
+    - i want to learn about [Arrays of Arrays](Arrays of Arrays)
+    - describe [Arrays of Arrays](Arrays of Arrays)
+    - define [Arrays of Arrays](Arrays of Arrays)
+    - could you elaborate the concept of [Arrays of Arrays](Arrays of Arrays)
+    - tell me about the concept of [Arrays of Arrays](Arrays of Arrays)
+- intent: ask_numeral_systems
+  examples: |
+    - what is [Numeral Systems](Numeral Systems) in c#
+    - elaborate [Numeral Systems](Numeral Systems)
+    - explain the concept of [Numeral Systems](Numeral Systems) in programming
+    - explain the concept of [Numeral Systems](Numeral Systems)
+    - what are [Numeral System](Numeral Systems)
+    - can you help me with [Numeral Systems](Numeral Systems)
+    - i want to learn about [Numeral Systems](Numeral Systems)
+    - describe [Numeral Systems](Numeral Systems)
+    - define [Numeral Systems](Numeral Systems)
+    - could you elaborate the concept of [Numeral Systems](Numeral Systems)
+    - tell me about the concept of [Numeral Systems](Numeral Systems)
+- intent: ask_history_of_numeral_systems
+  examples: |
+    - what is [History of Numeral System](History of Numeral Systems) in c#
+    - elaborate [History of Numeral Systems](History of Numeral Systems)
+    - explain the concept of [History of Numeral Systems](History of Numeral Systems) in programming
+    - explain the concept of [History of Numeral Systems](History of Numeral Systems)
+    - what are [History of Numeral System](History of Numeral Systems)
+    - can you help me with [History of Numeral Systems](History of Numeral Systems)
+    - i want to learn about [History of Numeral Systems](History of Numeral Systems)
+    - describe [History of Numeral Systems](History of Numeral Systems)
+    - define [History of Numeral System](History of Numeral Systems)
+    - could you elaborate the concept of [History of Numeral Systems](History of Numeral Systems)
+    - tell me about the concept of [History of Numeral Systems](History of Numeral Systems)
+- intent: ask_representation_of_numbers
+  examples: |
+    - what is [Representation of Number](Representation of Numbers) in c#
+    - elaborate [Representation of Numbers](Representation of Numbers)
+    - explain the concept of [Representation of Numbers](Representation of Numbers) in programming
+    - explain the concept of [Representation of Numbers](Representation of Numbers)
+    - what are [Representation of Numbers](Representation of Numbers)
+    - can you help me with [Representation of Numbers](Representation of Numbers)
+    - i want to learn about [Representation of Numbers](Representation of Numbers)
+    - describe [Representation of Numbers](Representation of Numbers)
+    - define [Representation of Numbers](Representation of Numbers)
+    - could you elaborate the concept of [Representation of Numbers](Representation of Numbers)
+    - tell me about the concept of [Representation of Number](Representation of Numbers)
+- intent: ask_subroutines
+  examples: |
+    - what is [Subroutine](Subroutines) in c#
+    - elaborate [Subroutines](Subroutines)
+    - explain the concept of [Subroutines](Subroutines) in programming
+    - explain the concept of [Subroutines](Subroutines)
+    - what are [Subroutines](Subroutines)
+    - can you help me with [Subroutines](Subroutines)
+    - i want to learn about [Subroutines](Subroutines)
+    - describe [Subroutines](Subroutines)
+    - define [Subroutine](Subroutines)
+    - could you elaborate the concept of [Subroutines](Subroutines)
+    - tell me about the concept of [Subroutines](Subroutines)
+- intent: ask_methods
+  examples: |
+    - what is [Method](Methods) in c#
+    - elaborate [Methods](Methods)
+    - explain the concept of [Method](Methods) in programming
+    - explain the concept of [Methods](Methods)
+    - what are [Methods](Methods)
+    - can you help me with [Methods](Methods)
+    - i want to learn about [Methods](Methods)
+    - describe [Methods](Methods)
+    - define [Methods](Methods)
+    - could you elaborate the concept of [Methods](Methods)
+    - tell me about the concept of [Method](Methods)
+- intent: ask_method_declaration
+  examples: |
+    - what is [Method Declaration](Method Declaration) in c#
+    - elaborate [Method Declaration](Method Declaration)
+    - explain the concept of [Method Declaration](Method Declaration) in programming
+    - explain the concept of [Method Declaration](Method Declaration)
+    - what are [Method Declaration](Method Declaration)
+    - can you help me with [Method Declaration](Method Declaration)
+    - i want to learn about [Method Declaration](Method Declaration)
+    - describe [Method Declaration](Method Declaration)
+    - define [Method Declaration](Method Declaration)
+    - could you elaborate the concept of [Method Declaration](Method Declaration)
+    - tell me about the concept of [Method Declaration](Method Declaration)
+- intent: ask_implementing_methods
+  examples: |
+    - what is [Implementing Method](Implementing Methods) in c#
+    - elaborate [Implementing Methods](Implementing Methods)
+    - explain the concept of [Implementing Methods](Implementing Methods) in programming
+    - explain the concept of [Implementing Methods](Implementing Methods)
+    - what are [Implementing Methods](Implementing Methods)
+    - can you help me with [Implementing Methods](Implementing Methods)
+    - i want to learn about [Implementing Methods](Implementing Methods)
+    - describe [Implementing Methods](Implementing Methods)
+    - define [Implementing Method](Implementing Methods)
+    - could you elaborate the concept of [Implementing Methods](Implementing Methods)
+    - tell me about the concept of [Implementing Methods](Implementing Methods)
+- intent: ask_invoking_methods
+  examples: |
+    - what is [Invoking Methods](Invoking Methods) in c#
+    - elaborate [Invoking Methods](Invoking Methods)
+    - explain the concept of [Invoking Methods](Invoking Methods) in programming
+    - explain the concept of [Invoking Methods](Invoking Methods)
+    - what are [Invoking Methods](Invoking Methods)
+    - can you help me with [Invoking Methods](Invoking Methods)
+    - i want to learn about [Invoking Methods](Invoking Methods)
+    - describe [Invoking Methods](Invoking Methods)
+    - define [Invoking Methods](Invoking Methods)
+    - could you elaborate the concept of [Invoking Methods](Invoking Methods)
+    - tell me about the concept of [Invoking Methods](Invoking Methods)
+- intent: ask_parameters_in_methods
+  examples: |
+    - what is [Parameters in Method](Parameters in Methods) in c#
+    - elaborate [Parameters in Methods](Parameters in Methods)
+    - explain the concept of [Parameters in Methods](Parameters in Methods) in programming
+    - explain the concept of [Parameters in Methods](Parameters in Methods)
+    - what are [Parameters in Methods](Parameters in Methods)
+    - can you help me with [Parameters in Methods](Parameters in Methods)
+    - i want to learn about [Parameters in Methods](Parameters in Methods)
+    - describe [Parameters in Methods](Parameters in Methods)
+    - define [Parameters in Method](Parameters in Methods)
+    - could you elaborate the concept of [Parameters in Methods](Parameters in Methods)
+    - tell me about the concept of [Parameters in Methods](Parameters in Methods)
+- intent: ask_returning_values_from_methods
+  examples: |
+    - what is [Returning Values from Method](Returning Values from Methods) in c#
+    - elaborate [Returning Values from Methods](Returning Values from Methods)
+    - explain the concept of [Returning Values from Methods](Returning Values from Methods) in programming
+    - explain the concept of [Returning Values from Methods](Returning Values from Methods)
+    - what are [Returning Values from Method](Returning Values from Methods)
+    - can you help me with [Returning Values from Methods](Returning Values from Methods)
+    - i want to learn about [Returning Values from Methods](Returning Values from Methods)
+    - describe [Returning Values from Methods](Returning Values from Methods)
+    - define [Returning Values from Methods](Returning Values from Methods)
+    - could you elaborate the concept of [Returning Values from Methods](Returning Values from Methods)
+    - tell me about the concept of [Returning Values from Methods](Returning Values from Methods)
+- intent: ask_recursion
+  examples: |
+    - what is [Recursion](Recursion) in c#
+    - elaborate [Recursion](Recursion)
+    - explain the concept of [Recursion](Recursion) in programming
+    - explain the concept of [Recursion](Recursion)
+    - what are [Recursion](Recursion)
+    - can you help me with [Recursion](Recursion)
+    - i want to learn about [Recursion](Recursion)
+    - describe [Recursion](Recursion)
+    - define [Recursion](Recursion)
+    - could you elaborate the concept of [Recursion](Recursion)
+    - tell me about the concept of [Recursion](Recursion)
+- intent: ask_direct_and_indirect_recursion
+  examples: |
+    - what is [Direct and Indirect Recursion](Direct and Indirect Recursion) in c#
+    - elaborate [Direct and Indirect Recursion](Direct and Indirect Recursion)
+    - explain the concept of [Direct and Indirect Recursion](Direct and Indirect Recursion) in programming
+    - explain the concept of [Direct and Indirect Recursion](Direct and Indirect Recursion)
+    - what are [Direct and Indirect Recursion](Direct and Indirect Recursion)
+    - can you help me with [Direct and Indirect Recursion](Direct and Indirect Recursion)
+    - i want to learn about [Direct and Indirect Recursion](Direct and Indirect Recursion)
+    - describe [Direct and Indirect Recursion](Direct and Indirect Recursion)
+    - define [Direct and Indirect Recursion](Direct and Indirect Recursion)
+    - could you elaborate the concept of [Direct and Indirect Recursion](Direct and Indirect Recursion)
+    - tell me about the concept of [Direct and Indirect Recursion](Direct and Indirect Recursion)
+- intent: ask_recursive_methods
+  examples: |
+    - what is [Recursive Method](Recursive Methods) in c#
+    - elaborate [Recursive Methods](Recursive Methods)
+    - explain the concept of [Recursive Methods](Recursive Methods) in programming
+    - explain the concept of [Recursive Methods](Recursive Methods)
+    - what are [Recursive Methods](Recursive Methods)
+    - can you help me with [Recursive Methods](Recursive Methods)
+    - i want to learn about [Recursive Methods](Recursive Methods)
+    - describe [Recursive Methods](Recursive Methods)
+    - define [Recursive Method](Recursive Methods)
+    - could you elaborate the concept of [Recursive Methods](Recursive Methods)
+    - tell me about the concept of [Recursive Methods](Recursive Methods)
+- intent: ask_factorial_calculation
+  examples: |
+    - what is [Factorial Calculation](Factorial Calculation) in c#
+    - elaborate [Factorial Calculation](Factorial Calculation)
+    - explain the concept of [Factorial Calculation](Factorial Calculation) in programming
+    - explain the concept of [Factorial Calculation](Factorial Calculation)
+    - what are [Factorial Calculation](Factorial Calculation)
+    - can you help me with [Factorial Calculation](Factorial Calculation)
+    - i want to learn about [Factorial Calculation](Factorial Calculation)
+    - describe [Factorial Calculation](Factorial Calculation)
+    - define [Factorial Calculation](Factorial Calculation)
+    - could you elaborate the concept of [Factorial Calculation](Factorial Calculation)
+    - tell me about the concept of [Factorial Calculation](Factorial Calculation)
+- intent: ask_creating_and_using_objects
+  examples: |
+    - what is [Creating and Using Object](Creating and Using Objects) in c#
+    - elaborate [Creating and Using Objects](Creating and Using Objects)
+    - explain the concept of [Creating and Using Objects](Creating and Using Objects) in programming
+    - explain the concept of [Creating and Using Objects](Creating and Using Objects)
+    - what are [Creating and Using Object](Creating and Using Objects)
+    - can you help me with [Creating and Using Objects](Creating and Using Objects)
+    - i want to learn about [Creating and Using Objects](Creating and Using Objects)
+    - describe [Creating and Using Objects](Creating and Using Objects)
+    - define [Creating and Using Objects](Creating and Using Objects)
+    - could you elaborate the concept of [Creating and Using Objects](Creating and Using Objects)
+    - tell me about the concept of [Creating and Using Objects](Creating and Using Objects)
+- intent: ask_classes_and_objects
+  examples: |
+    - what is [Classes and Object](Classes and Objects) in c#
+    - elaborate [Classes and Objects](Classes and Objects)
+    - explain the concept of [Classes and Objects](Classes and Objects) in programming
+    - explain the concept of [Classes and Objects](Classes and Objects)
+    - what are [Classes and Objects](Classes and Objects)
+    - can you help me with [Objects](Classes and Objects)
+    - i want to learn about [Classes](Classes and Objects)
+    - describe [Classes and Object](Classes and Objects)
+    - define [Class](Classes and Objects)
+    - could you elaborate the concept of [Object](Classes and Objects)
+    - tell me about the concept of [Classes and Objects](Classes and Objects)
+- intent: ask_namespaces
+  examples: |
+    - what is [Namespace](Namespaces) in c#
+    - elaborate [Namespaces](Namespaces)
+    - explain the concept of [Namespaces](Namespaces) in programming
+    - explain the concept of [Namespaces](Namespaces)
+    - what are [Namespaces](Namespaces)
+    - can you help me with [Namespaces](Namespaces)
+    - i want to learn about [Namespaces](Namespaces)
+    - describe [Namespace](Namespaces)
+    - define [Namespaces](Namespaces)
+    - could you elaborate the concept of [Namespaces](Namespaces)
+    - tell me about the concept of [Namespaces](Namespaces)
+- intent: ask_exception_handling
+  examples: |
+    - what is [Exception Handling](Exception Handling) in c#
+    - elaborate [Exception Handling](Exception Handling)
+    - explain the concept of [Exception Handling](Exception Handling) in programming
+    - explain the concept of [Exception Handling](Exception Handling)
+    - what are [Exception Handling](Exception Handling)
+    - can you help me with [Exception Handling](Exception Handling)
+    - i want to learn about [Exception Handling](Exception Handling)
+    - describe [Exception Handling](Exception Handling)
+    - define [Exception Handling](Exception Handling)
+    - could you elaborate the concept of [Exception Handling](Exception Handling)
+    - tell me about the concept of [Exception Handling](Exception Handling)
+- intent: ask_exceptions_hierarchy
+  examples: |
+    - what is [Exceptions Hierarchy](Exceptions Hierarchy) in c#
+    - elaborate [Exceptions Hierarchy](Exceptions Hierarchy)
+    - explain the concept of [Exceptions Hierarchy](Exceptions Hierarchy) in programming
+    - explain the concept of [Exceptions Hierarchy](Exceptions Hierarchy)
+    - what are [Exceptions Hierarchy](Exceptions Hierarchy)
+    - can you help me with [Exceptions Hierarchy](Exceptions Hierarchy)
+    - i want to learn about [Exceptions Hierarchy](Exceptions Hierarchy)
+    - describe [Exceptions Hierarchy](Exceptions Hierarchy)
+    - define [Exceptions Hierarchy](Exceptions Hierarchy)
+    - could you elaborate the concept of [Exceptions Hierarchy](Exceptions Hierarchy)
+    - tell me about the concept of [Exceptions Hierarchy](Exceptions Hierarchy)
+- intent: ask_throwing_and_catching_exceptions
+  examples: |
+    - what is [Throwing and Catching Exception](Throwing and Catching Exceptions) in c#
+    - elaborate [Throwing and Catching Exceptions](Throwing and Catching Exceptions)
+    - explain the concept of [Throwing and Catching Exceptions](Throwing and Catching Exceptions) in programming
+    - explain the concept of [Throwing and Catching Exceptions](Throwing and Catching Exceptions)
+    - what are [Throwing and Catching Exception](Throwing and Catching Exceptions)
+    - can you help me with [Throwing and Catching Exceptions](Throwing and Catching Exceptions)
+    - i want to learn about [Throwing and Catching Exceptions](Throwing and Catching Exceptions)
+    - describe [Throwing and Catching Exceptions](Throwing and Catching Exceptions)
+    - define [Throwing and Catching Exception](Throwing and Catching Exceptions)
+    - could you elaborate the concept of [Throwing and Catching Exceptions](Throwing and Catching Exceptions)
+    - tell me about the concept of [Throwing and Catching Exceptions](Throwing and Catching Exceptions)
+- intent: ask_try_finally_construct
+  examples: |
+    - what is [try finally Construct](try-finally Construct) in c#
+    - elaborate [try finally Construct](try-finally Construct)
+    - explain the concept of [try finally Construct](try-finally Construct) in programming
+    - explain the concept of [try finally Construct](try-finally Construct)
+    - what are [try finally Construct](try-finally Construct)
+    - can you help me with [try finally Construct](try-finally Construct)
+    - i want to learn about [try finally Construct](try-finally Construct)
+    - describe [try finally Construct](try-finally Construct)
+    - define [try finally Construct](try-finally Construct)
+    - could you elaborate the concept of [try finally Construct](try-finally Construct)
+    - tell me about the concept of [try finally Construct](try-finally Construct)
+- intent: ask_idisposable_and_using
+  examples: |
+    - what is [IDisposable and using](IDisposable and using) in c#
+    - elaborate [IDisposable and using](IDisposable and using)
+    - explain the concept of [IDisposable and using](IDisposable and using) in programming
+    - explain the concept of [IDisposable and using](IDisposable and using)
+    - what are [IDisposable and using](IDisposable and using)
+    - can you help me with [IDisposable and using](IDisposable and using)
+    - i want to learn about [IDisposable and using](IDisposable and using)
+    - describe [IDisposable and using](IDisposable and using)
+    - define [IDisposable and using](IDisposable and using)
+    - could you elaborate the concept of [IDisposable and using](IDisposable and using)
+    - tell me about the concept of [IDisposable and using](IDisposable and using)
+- intent: ask_advantages_of_using_exceptions
+  examples: |
+    - what is [Advantages of Using Exception](Advantages of Using Exceptions) in c#
+    - elaborate [Advantages of Using Exceptions](Advantages of Using Exceptions)
+    - explain the concept of [Advantages of Using Exceptions](Advantages of Using Exceptions) in programming
+    - explain the concept of [Advantages of Using Exceptions](Advantages of Using Exceptions)
+    - what are [Advantages of Using Exception](Advantages of Using Exceptions)
+    - can you help me with [Advantages of Using Exceptions](Advantages of Using Exceptions)
+    - i want to learn about [Advantages of Using Exceptions](Advantages of Using Exceptions)
+    - describe [Advantages of Using Exceptions](Advantages of Using Exceptions)
+    - define [Advantages of Using Exceptions](Advantages of Using Exceptions)
+    - could you elaborate the concept of [Advantages of Using Exceptions](Advantages of Using Exceptions)
+    - tell me about the concept of [Advantages of Using Exceptions](Advantages of Using Exceptions)
+- intent: ask_strings
+  examples: |
+    - what is [String](Strings) in c#
+    - elaborate [Strings](Strings)
+    - explain the concept of [Strings](Strings) in programming
+    - explain the concept of [Strings](Strings)
+    - what are [Strings](Strings)
+    - can you help me with [Strings](Strings)
+    - i want to learn about [Strings](Strings)
+    - describe [String](Strings)
+    - define [Strings](Strings)
+    - could you elaborate the concept of [Strings](Strings)
+    - tell me about the concept of [Strings](Strings)
+- intent: ask_string_operations
+  examples: |
+    - what is [String Operation](String Operations) in c#
+    - elaborate [String Operations](String Operations)
+    - explain the concept of [String Operations](String Operations) in programming
+    - explain the concept of [String Operations](String Operations)
+    - what are [String Operations](String Operations)
+    - can you help me with [String Operations](String Operations)
+    - i want to learn about [String Operations](String Operations)
+    - describe [String Operation](String Operations)
+    - define [String Operations](String Operations)
+    - could you elaborate the concept of [String Operations](String Operations)
+    - tell me about the concept of [String Operations](String Operations)
+- intent: ask_stringbuilder_class
+  examples: |
+    - what is [StringBuilder Class](StringBuilder Class) in c#
+    - elaborate [StringBuilder Class](StringBuilder Class)
+    - explain the concept of [StringBuilder Class](StringBuilder Class) in programming
+    - explain the concept of [StringBuilder Class](StringBuilder Class)
+    - what are [StringBuilder Class](StringBuilder Class)
+    - can you help me with [StringBuilder Class](StringBuilder Class)
+    - i want to learn about [StringBuilder Class](StringBuilder Class)
+    - describe [StringBuilder Class](StringBuilder Class)
+    - define [StringBuilder Class](StringBuilder Class)
+    - could you elaborate the concept of [StringBuilder Class](StringBuilder Class)
+    - tell me about the concept of [StringBuilder Class](StringBuilder Class)
+- intent: ask_string_formatting
+  examples: |
+    - what is [String Formatting](String Formatting) in c#
+    - elaborate [String Formatting](String Formatting)
+    - explain the concept of [String Formatting](String Formatting) in programming
+    - explain the concept of [String Formatting](String Formatting)
+    - what are [String Formatting](String Formatting)
+    - can you help me with [String Formatting](String Formatting)
+    - i want to learn about [String Formatting](String Formatting)
+    - describe [String Formatting](String Formatting)
+    - define [String Formatting](String Formatting)
+    - could you elaborate the concept of [String Formatting](String Formatting)
+    - tell me about the concept of [String Formatting](String Formatting)
+- intent: ask_custom_classes
+  examples: |
+    - what is [Custom Class](Custom Classes) in c#
+    - elaborate [Custom Classes](Custom Classes)
+    - explain the concept of [Custom Classes](Custom Classes) in programming
+    - explain the concept of [Custom Classes](Custom Classes)
+    - what are [Custom Classes](Custom Classes)
+    - can you help me with [Custom Classes](Custom Classes)
+    - i want to learn about [Custom Classes](Custom Classes)
+    - describe [Custom Classes](Custom Classes)
+    - define [Custom Class](Custom Classes)
+    - could you elaborate the concept of [Custom Classes](Custom Classes)
+    - tell me about the concept of [Custom Classes](Custom Classes)
+- intent: ask_modifiers_and_access_levels
+  examples: |
+    - what is [Modifiers and Access Level](Modifiers and Access Levels) in c#
+    - elaborate [Modifiers and Access Levels](Modifiers and Access Levels)
+    - explain the concept of [Modifiers and Access Levels](Modifiers and Access Levels) in programming
+    - explain the concept of [Modifiers and Access Levels](Modifiers and Access Levels)
+    - what are [Modifiers and Access Levels](Modifiers and Access Levels)
+    - can you help me with [Modifiers and Access Levels](Modifiers and Access Levels)
+    - i want to learn about [Modifiers and Access Level](Modifiers and Access Levels)
+    - describe [Modifiers and Access Levels](Modifiers and Access Levels)
+    - define [Modifiers and Access Levels](Modifiers and Access Levels)
+    - could you elaborate the concept of [Modifiers and Access Levels](Modifiers and Access Levels)
+    - tell me about the concept of [Modifiers and Access Levels](Modifiers and Access Levels)
+- intent: ask_fields
+  examples: |
+    - what is [Field](Fields) in c#
+    - elaborate [Field](Fields)
+    - explain the concept of [Field](Fields) in programming
+    - explain the concept of [Fields](Fields)
+    - what are [Fields](Fields)
+    - can you help me with [Fields](Fields)
+    - i want to learn about [Fields](Fields)
+    - describe [Fields](Fields)
+    - define [Fields](Fields)
+    - could you elaborate the concept of [Fields](Fields)
+    - tell me about the concept of [Field](Fields)
+- intent: ask_methods_in_classes
+  examples: |
+    - what is [Methods in Class](Methods in Classes) in c#
+    - elaborate [Methods in Classes](Methods in Classes)
+    - explain the concept of [Methods in Classes](Methods in Classes) in programming
+    - explain the concept of [Methods in Classes](Methods in Classes)
+    - what are [Methods in Classes](Methods in Classes)
+    - can you help me with [Methods in Classes](Methods in Classes)
+    - i want to learn about [Methods in Class](Methods in Classes)
+    - describe [Methods in Classes](Methods in Classes)
+    - define [Methods in Classes](Methods in Classes)
+    - could you elaborate the concept of [Methods in Classes](Methods in Classes)
+    - tell me about the concept of [Methods in Classes](Methods in Classes)
+- intent: ask_constructors
+  examples: |
+    - what is [Constructor](Constructors) in c#
+    - elaborate [Constructors](Constructors)
+    - explain the concept of [Constructors](Constructors) in programming
+    - explain the concept of [Constructors](Constructors)
+    - what are [Constructors](Constructors)
+    - can you help me with [Constructor](Constructors)
+    - i want to learn about [Constructors](Constructors)
+    - describe [Constructors](Constructors)
+    - define [Constructors](Constructors)
+    - could you elaborate the concept of [Constructors](Constructors)
+    - tell me about the concept of [Constructors](Constructors)
+- intent: ask_properties
+  examples: |
+    - what is [Property](Properties) in c#
+    - elaborate [Properties](Properties)
+    - explain the concept of [Properties](Properties) in programming
+    - explain the concept of [Properties](Properties)
+    - what are [Properties](Properties)
+    - can you help me with [Properties](Properties)
+    - i want to learn about [Properties](Properties)
+    - describe [Property](Properties)
+    - define [Properties](Properties)
+    - could you elaborate the concept of [Properties](Properties)
+    - tell me about the concept of [Properties](Properties)
+- intent: ask_static_classes_and_members
+  examples: |
+    - what is [Static Classes and Member](Static Classes and Members) in c#
+    - elaborate [Static Classes and Members](Static Classes and Members)
+    - explain the concept of [Static Classes and Members](Static Classes and Members) in programming
+    - explain the concept of [Static Classes and Members](Static Classes and Members)
+    - what are [Static Classes and Members](Static Classes and Members)
+    - can you help me with [Static Classes and Members](Static Classes and Members)
+    - i want to learn about [Static Classes and Member](Static Classes and Members)
+    - describe [Static Classes and Members](Static Classes and Members)
+    - define [Static Classes and Members](Static Classes and Members)
+    - could you elaborate the concept of [Static Classes and Members](Static Classes and Members)
+    - tell me about the concept of [Static Classes and Members](Static Classes and Members)
+- intent: ask_structures
+  examples: |
+    - what is [Structure](Structures) in c#
+    - elaborate [Structures](Structures)
+    - explain the concept of [Structures](Structures) in programming
+    - explain the concept of [Structures](Structures)
+    - what are [Structures](Structures)
+    - can you help me with [Structure](Structures)
+    - i want to learn about [Structures](Structures)
+    - describe [Structures](Structures)
+    - define [Structures](Structures)
+    - could you elaborate the concept of [Structures](Structures)
+    - tell me about the concept of [Structures](Structures)
+- intent: ask_enumerations
+  examples: |
+    - what is [Enumeration](Enumerations) in c#
+    - elaborate [Enumerations](Enumerations)
+    - explain the concept of [Enumerations](Enumerations) in programming
+    - explain the concept of [Enumerations](Enumerations)
+    - what are [Enumerations](Enumerations)
+    - can you help me with [Enumeration](Enumerations)
+    - i want to learn about [Enumerations](Enumerations)
+    - describe [Enumerations](Enumerations)
+    - define [Enumerations](Enumerations)
+    - could you elaborate the concept of [Enumerations](Enumerations)
+    - tell me about the concept of [Enumerations](Enumerations)
+- intent: ask_inner_classes
+  examples: |
+    - what is [Inner Class](Inner Classes) in c#
+    - elaborate [Inner Classes](Inner Classes)
+    - explain the concept of [Inner Classes](Inner Classes) in programming
+    - explain the concept of [Inner Classes](Inner Classes)
+    - what are [Inner Class](Inner Classes)
+    - can you help me with [Inner Classes](Inner Classes)
+    - i want to learn about [Inner Classes](Inner Classes)
+    - describe [Inner Classes](Inner Classes)
+    - define [Inner Classes](Inner Classes)
+    - could you elaborate the concept of [Inner Classes](Inner Classes)
+    - tell me about the concept of [Inner Classes](Inner Classes)
+- intent: ask_generics
+  examples: |
+    - what is [Generic](Generics) in c#
+    - elaborate [Generics](Generics)
+    - explain the concept of [Generics](Generics) in programming
+    - explain the concept of [Generics](Generics)
+    - what are [Generics](Generics)
+    - can you help me with [Generics](Generics)
+    - i want to learn about [Generics](Generics)
+    - describe [Generic](Generics)
+    - define [Generics](Generics)
+    - could you elaborate the concept of [Generics](Generics)
+    - tell me about the concept of [Generics](Generics)
+- intent: ask_text_files
+  examples: |
+    - what is [Text File](Text Files) in c#
+    - elaborate [Text Files](Text Files)
+    - explain the concept of [Text Files](Text Files) in programming
+    - explain the concept of [Text Files](Text Files)
+    - what are [Text Files](Text Files)
+    - can you help me with [Text Files](Text Files)
+    - i want to learn about [Text Files](Text Files)
+    - describe [Text Files](Text Files)
+    - define [Text Files](Text Files)
+    - could you elaborate the concept of [Text Files](Text Files)
+    - tell me about the concept of [Text Files](Text Files)
+- intent: ask_streams
+  examples: |
+    - what is [Stream](Streams) in c#
+    - elaborate [Streams](Streams)
+    - explain the concept of [Streams](Streams) in programming
+    - explain the concept of [Streams](Streams)
+    - what are [Streams](Streams)
+    - can you help me with [Streams](Streams)
+    - i want to learn about [Streams](Streams)
+    - describe [Streams](Streams)
+    - define [Streams](Streams)
+    - could you elaborate the concept of [Streams](Streams)
+    - tell me about the concept of [Streams](Streams)
+- intent: ask_reading_from_text_files
+  examples: |
+    - what is [Reading from Text File](Reading from Text Files) in c#
+    - elaborate [Reading from Text Files](Reading from Text Files)
+    - explain the concept of [Reading from Text Files](Reading from Text Files) in programming
+    - explain the concept of [Reading from Text Files](Reading from Text Files)
+    - what are [Reading from Text Files](Reading from Text Files)
+    - can you help me with [Reading from Text Files](Reading from Text Files)
+    - i want to learn about [Reading from Text Files](Reading from Text Files)
+    - describe [Reading from Text Files](Reading from Text Files)
+    - define [Reading from Text Files](Reading from Text Files)
+    - could you elaborate the concept of [Reading from Text Files](Reading from Text Files)
+    - tell me about the concept of [Reading from Text Files](Reading from Text Files)
+- intent: ask_writing_to_text_files
+  examples: |
+    - what is [Writing to Text File](Writing to Text Files) in c#
+    - elaborate [Writing to Text Files](Writing to Text Files)
+    - explain the concept of [Writing to Text Files](Writing to Text Files) in programming
+    - explain the concept of [Writing to Text Files](Writing to Text Files)
+    - what are [Writing to Text Files](Writing to Text Files)
+    - can you help me with [Writing to Text Files](Writing to Text Files)
+    - i want to learn about [Writing to Text Files](Writing to Text Files)
+    - describe [Writing to Text File](Writing to Text Files)
+    - define [Writing to Text Files](Writing to Text Files)
+    - could you elaborate the concept of [Writing to Text Files](Writing to Text Files)
+    - tell me about the concept of [Writing to Text Files](Writing to Text Files)
+- intent: ask_input_output_exception_handling
+  examples: |
+    - what is [Input Output Exception Handling](Input/Output Exception Handling) in c#
+    - elaborate [Input Output Exception Handling](Input/Output Exception Handling)
+    - explain the concept of [Input Output Exception Handling](Input/Output Exception Handling) in programming
+    - explain the concept of [Input Output Exception Handling](Input/Output Exception Handling)
+    - what are [Input Output Exception Handling](Input/Output Exception Handling)
+    - can you help me with [Input Output Exception Handling](Input/Output Exception Handling)
+    - i want to learn about [Input Output Exception Handling](Input/Output Exception Handling)
+    - describe [Input Output Exception Handling](Input/Output Exception Handling)
+    - define [Input Output Exception Handling](Input/Output Exception Handling)
+    - could you elaborate the concept of [Input Output Exception Handling](Input/Output Exception Handling)
+    - tell me about the concept of [Input Output Exception Handling](Input/Output Exception Handling)
+- intent: ask_linear_data_structures
+  examples: |
+    - what is [Linear](Linear Data Structures) in c#
+    - elaborate [Linear Data Structures](Linear Data Structures)
+    - explain the concept of [Linear Data Structures](Linear Data Structures) in programming
+    - explain the concept of [Linear Data Structure](Linear Data Structures)
+    - what are [Linear Data Structures](Linear Data Structures)
+    - can you help me with [Linear Data Structures](Linear Data Structures)
+    - i want to learn about [Linear Data Structures](Linear Data Structures)
+    - describe [Linear Data Structures](Linear Data Structures)
+    - define [Linear Data Structures](Linear Data Structures)
+    - could you elaborate the concept of [Linear Data Structures](Linear Data Structures)
+    - tell me about the concept of [Linear Data Structures](Linear Data Structures)
+- intent: ask_abstract_data_structures
+  examples: |
+    - what is [Abstract Data Structure](Abstract Data Structures) in c#
+    - elaborate [Abstract Data Structures](Abstract Data Structures)
+    - explain the concept of [Abstract Data Structures](Abstract Data Structures) in programming
+    - explain the concept of [Abstract Data Structures](Abstract Data Structures)
+    - what are [Data Structures](Abstract Data Structures)
+    - can you help me with [Abstract Data Structures](Abstract Data Structures)
+    - i want to learn about [Abstract Data Structures](Abstract Data Structures)
+    - describe [Abstract Data Structures](Abstract Data Structures)
+    - define [Abstract Data Structure](Abstract Data Structures)
+    - could you elaborate the concept of [Abstract Data Structures](Abstract Data Structures)
+    - tell me about the concept of [Abstract Data Structures](Abstract Data Structures)
+- intent: ask_list_data_structures
+  examples: |
+    - what is [List Data Structure](List Data Structures) in c#
+    - elaborate [List Data Structures](List Data Structures)
+    - explain the concept of [List Data Structures](List Data Structures) in programming
+    - explain the concept of [List Data Structures](List Data Structures)
+    - what are [List](List Data Structures)
+    - can you help me with [List Data Structures](List Data Structures)
+    - i want to learn about [List Data Structures](List Data Structures)
+    - describe [List Data Structures](List Data Structures)
+    - define [List Data Structures](List Data Structures)
+    - could you elaborate the concept of [List Data Structures](List Data Structures)
+    - tell me about the concept of [List Data Structures](List Data Structures)
+- intent: ask_trees
+  examples: |
+    - what is [Tree](Trees) in c#
+    - elaborate [Trees](Trees)
+    - explain the concept of [Trees](Trees) in programming
+    - explain the concept of [Trees](Trees)
+    - what are [Trees](Trees)
+    - can you help me with [Trees](Trees)
+    - i want to learn about [Trees](Trees)
+    - describe [Trees](Trees)
+    - define [Trees](Trees)
+    - could you elaborate the concept of [Trees](Trees)
+    - tell me about the concept of [Trees](Trees)
+- intent: ask_tree_data_structures
+  examples: |
+    - what is [Tree Data Structure](Tree Data Structures) in c#
+    - elaborate [Tree Data Structures](Tree Data Structures)
+    - explain the concept of [Tree Data Structures](Tree Data Structures) in programming
+    - explain the concept of [Tree Data Structures](Tree Data Structures)
+    - what are [Tree Data Structures](Tree Data Structures)
+    - can you help me with [Tree Data Structures](Tree Data Structures)
+    - i want to learn about [Tree Data Structures](Tree Data Structures)
+    - describe [Tree](Tree Data Structures)
+    - define [Tree Data Structures](Tree Data Structures)
+    - could you elaborate the concept of [Tree Data Structures](Tree Data Structures)
+    - tell me about the concept of [Tree Data Structures](Tree Data Structures)
+- intent: ask_graphs
+  examples: |
+    - what is [Graph](Graphs) in c#
+    - elaborate [Graphs](Graphs)
+    - explain the concept of [Graphs](Graphs) in programming
+    - explain the concept of [Graphs](Graphs)
+    - what are [Graphs](Graphs)
+    - can you help me with [Graphs](Graphs)
+    - i want to learn about [Graph](Graphs)
+    - describe [Graphs](Graphs)
+    - define [Graphs](Graphs)
+    - could you elaborate the concept of [Graphs](Graphs)
+    - tell me about the concept of [Graphs](Graphs)
+- intent: ask_dictionary_data_structure
+  examples: |
+    - what is [Dictionary](Dictionary Data Structure) in c#
+    - elaborate [Dictionary Data Structure](Dictionary Data Structure)
+    - explain the concept of [Dictionary Data Structure](Dictionary Data Structure) in programming
+    - explain the concept of [Dictionary Data Structure](Dictionary Data Structure)
+    - what are [Dictionary Data Structure](Dictionary Data Structure)
+    - can you help me with [Dictionary Data Structure](Dictionary Data Structure)
+    - i want to learn about [Dictionary Data Structure](Dictionary Data Structure)
+    - describe [Dictionary Data Structure](Dictionary Data Structure)
+    - define [Dictionary Data Structure](Dictionary Data Structure)
+    - could you elaborate the concept of [Dictionary Data Structure](Dictionary Data Structure)
+    - tell me about the concept of [Dictionary Data Structure](Dictionary Data Structure)
+- intent: ask_hash_tables
+  examples: |
+    - what is [Hash Table](Hash-Tables) in c#
+    - elaborate [Hash Tables](Hash-Tables)
+    - explain the concept of [Hash Tables](Hash-Tables) in programming
+    - explain the concept of [Hash Tables](Hash-Tables)
+    - what are [Hash Tables](Hash-Tables)
+    - can you help me with [Hash Tables](Hash-Tables)
+    - i want to learn about [Hash Tables](Hash-Tables)
+    - describe [Hash Tables](Hash-Tables)
+    - define [hashing](Hash-Tables)
+    - could you elaborate the concept of [Hash Tables](Hash-Tables)
+    - tell me about the concept of [Hash Table](Hash-Tables)
+- intent: ask_set_data_structure
+  examples: |
+    - what is [Set Data Structure](Set Data Structure) in c#
+    - elaborate [Set Data Structure](Set Data Structure)
+    - explain the concept of [Set Data Structure](Set Data Structure) in programming
+    - explain the concept of [Set Data Structure](Set Data Structure)
+    - what are [Set Data Structure](Set Data Structure)
+    - can you help me with [Set Data Structure](Set Data Structure)
+    - i want to learn about [Set Data Structure](Set Data Structure)
+    - describe [Set Data Structure](Set Data Structure)
+    - define [Set Data Structure](Set Data Structure)
+    - could you elaborate the concept of [Set Data Structure](Set Data Structure)
+    - tell me about the concept of [Set Data Structure](Set Data Structure)
+- intent: ask_data_structures_importance
+  examples: |
+    - what is [Data Structures Importance](Data Structures Importance) in c#
+    - elaborate [Data Structures Importance](Data Structures Importance)
+    - explain the concept of [Data Structures Importance](Data Structures Importance) in programming
+    - explain the concept of [Data Structures Importance](Data Structures Importance)
+    - what are [Data Structures Importance](Data Structures Importance)
+    - can you help me with [Data Structures Importance](Data Structures Importance)
+    - i want to learn about [Data Structures Importance](Data Structures Importance)
+    - describe [Data Structures Importance](Data Structures Importance)
+    - define [Data Structures Importance](Data Structures Importance)
+    - could you elaborate the concept of [Data Structures Importance](Data Structures Importance)
+    - tell me about the concept of [Data Structures Importance](Data Structures Importance)
+- intent: ask_algorithm_complexity
+  examples: |
+    - what is [Algorithm Complexity](Algorithm Complexity) in c#
+    - elaborate [Algorithm Complexity](Algorithm Complexity)
+    - explain the concept of [Algorithm Complexity](Algorithm Complexity) in programming
+    - explain the concept of [Algorithm Complexity](Algorithm Complexity)
+    - what are [Algorithm Complexity](Algorithm Complexity)
+    - can you help me with [Algorithm Complexity](Algorithm Complexity)
+    - i want to learn about [Algorithm Complexity](Algorithm Complexity)
+    - describe [Algorithm Complexity](Algorithm Complexity)
+    - define [Algorithm Complexity](Algorithm Complexity)
+    - could you elaborate the concept of [Algorithm Complexity](Algorithm Complexity)
+    - tell me about the concept of [Algorithm Complexity](Algorithm Complexity)
+- intent: ask_comparison_of_data_structures
+  examples: |
+    - what is [Comparison of Data Structure](Comparison of Data Structures) in c#
+    - elaborate [Comparison of Data Structures](Comparison of Data Structures)
+    - explain the concept of [Comparison of Data Structures](Comparison of Data Structures) in programming
+    - explain the concept of [Comparison of Data Structures](Comparison of Data Structures)
+    - what are [Comparison of Data Structures](Comparison of Data Structures)
+    - can you help me with [Comparison of Data Structures](Comparison of Data Structures)
+    - i want to learn about [Comparison of Data Structures](Comparison of Data Structures)
+    - describe [Comparison of Data Structure](Comparison of Data Structures)
+    - define [Comparison of Data Structures](Comparison of Data Structures)
+    - could you elaborate the concept of [Comparison of Data Structures](Comparison of Data Structures)
+    - tell me about the concept of [Comparison of Data Structures](Comparison of Data Structures)
+- intent: ask_when_to_use_specific_data_structures
+  examples: |
+    - what is [When to Use Specific Data Structure](when to Use Specific Data Structures) in c#
+    - elaborate [When to Use Specific Data Structures](when to Use Specific Data Structures)
+    - explain the concept of [When to Use Specific Data Structures](when to Use Specific Data Structures) in programming
+    - explain the concept of [When to Use Specific Data Structures](when to Use Specific Data Structures)
+    - what are [When to Use Specific Data Structures](when to Use Specific Data Structures)
+    - can you help me with [When to Use Specific Data Structures](when to Use Specific Data Structures)
+    - i want to learn about [When to Use Specific Data Structures](when to Use Specific Data Structures)
+    - describe [When to Use Specific Data Structure](when to Use Specific Data Structures)
+    - define [When to Use Specific Data Structures](when to Use Specific Data Structures)
+    - could you elaborate the concept of [When to Use Specific Data Structures](when to Use Specific Data Structures)
+    - tell me about the concept of [When to Use Specific Data Structures](when to Use Specific Data Structures)
+- intent: ask_object_oriented_programming
+  examples: |
+    - what is [Object-Oriented Programming](Object-Oriented Programming) in c#
+    - elaborate [Object-Oriented Programming](Object-Oriented Programming)
+    - explain the concept of [Object-Oriented Programming](Object-Oriented Programming) in programming
+    - explain the concept of [Object-Oriented Programming](Object-Oriented Programming)
+    - what are [Object-Oriented Programming](Object-Oriented Programming)
+    - can you help me with [Object-Oriented Programming](Object-Oriented Programming)
+    - i want to learn about [Object-Oriented Programming](Object-Oriented Programming)
+    - describe [Object-Oriented Programming](Object-Oriented Programming)
+    - define [Object-Oriented Programming](Object-Oriented Programming)
+    - could you elaborate the concept of [Object-Oriented Programming](Object-Oriented Programming)
+    - tell me about the concept of [Object-Oriented Programming](Object-Oriented Programming)
+- intent: ask_fundamental_oop_principles
+  examples: |
+    - what is [Fundamental OOP Principle](Fundamental OOP Principles) in c#
+    - elaborate [Fundamental OOP Principles](Fundamental OOP Principles)
+    - explain the concept of [Fundamental OOP Principles](Fundamental OOP Principles) in programming
+    - explain the concept of [Fundamental OOP Principles](Fundamental OOP Principles)
+    - what are [Fundamental OOP Principles](Fundamental OOP Principles)
+    - can you help me with [Fundamental OOP Principles](Fundamental OOP Principles)
+    - i want to learn about [Fundamental OOP Principles](Fundamental OOP Principles)
+    - describe [Fundamental OOP Principle](Fundamental OOP Principles)
+    - define [Fundamental OOP Principles](Fundamental OOP Principles)
+    - could you elaborate the concept of [Fundamental OOP Principles](Fundamental OOP Principles)
+    - tell me about the concept of [Fundamental OOP Principles](Fundamental OOP Principles)
+- intent: ask_inheritance
+  examples: |
+    - what is [Inheritance](Inheritance) in c#
+    - elaborate [Inheritance](Inheritance)
+    - explain the concept of [Inheritance](Inheritance) in programming
+    - explain the concept of [Inheritance](Inheritance)
+    - what are [Inheritance](Inheritance)
+    - can you help me with [Inheritance](Inheritance)
+    - i want to learn about [Inheritance](Inheritance)
+    - describe [Inheritance](Inheritance)
+    - define [Inheritance](Inheritance)
+    - could you elaborate the concept of [Inheritance](Inheritance)
+    - tell me about the concept of [Inheritance](Inheritance)
+- intent: ask_abstraction
+  examples: |
+    - what is [Abstraction](Abstraction) in c#
+    - elaborate [Abstraction](Abstraction)
+    - explain the concept of [Abstraction](Abstraction) in programming
+    - explain the concept of [Abstraction](Abstraction)
+    - what are [Abstraction](Abstraction)
+    - can you help me with [Abstraction](Abstraction)
+    - i want to learn about [Abstraction](Abstraction)
+    - describe [Abstraction](Abstraction)
+    - define [Abstraction](Abstraction)
+    - could you elaborate the concept of [Abstraction](Abstraction)
+    - tell me about the concept of [Abstraction](Abstraction)
+- intent: ask_encapsulation
+  examples: |
+    - what is [Encapsulation](Encapsulation) in c#
+    - elaborate [Encapsulation](Encapsulation)
+    - explain the concept of [Encapsulation](Encapsulation) in programming
+    - explain the concept of [Encapsulation](Encapsulation)
+    - what are [Encapsulation](Encapsulation)
+    - can you help me with [Encapsulation](Encapsulation)
+    - i want to learn about [Encapsulation](Encapsulation)
+    - describe [Encapsulation](Encapsulation)
+    - define [Encapsulation](Encapsulation)
+    - could you elaborate the concept of [Encapsulation](Encapsulation)
+    - tell me about the concept of [Encapsulation](Encapsulation)
+- intent: ask_polymorphism
+  examples: |
+    - what is [Polymorphism](Polymorphism) in c#
+    - elaborate [Polymorphism](Polymorphism)
+    - explain the concept of [Polymorphism](Polymorphism) in programming
+    - explain the concept of [Polymorphism](Polymorphism)
+    - what are [Polymorphism](Polymorphism)
+    - can you help me with [Polymorphism](Polymorphism)
+    - i want to learn about [Polymorphism](Polymorphism)
+    - describe [Polymorphism](Polymorphism)
+    - define [Polymorphism](Polymorphism)
+    - could you elaborate the concept of [Polymorphism](Polymorphism)
+    - tell me about the concept of [Polymorphism](Polymorphism)
+- intent: ask_cohesion_and_coupling
+  examples: |
+    - what is [Cohesion and Coupling](Cohesion and Coupling) in c#
+    - elaborate [Cohesion and Coupling](Cohesion and Coupling)
+    - explain the concept of [Cohesion and Coupling](Cohesion and Coupling) in programming
+    - explain the concept of [Cohesion and Coupling](Cohesion and Coupling)
+    - what are [Cohesion and Coupling](Cohesion and Coupling)
+    - can you help me with [Cohesion and Coupling](Cohesion and Coupling)
+    - i want to learn about [Cohesion and Coupling](Cohesion and Coupling)
+    - describe [Cohesion and Coupling](Cohesion and Coupling)
+    - define [Cohesion and Coupling](Cohesion and Coupling)
+    - could you elaborate the concept of [Cohesion and Coupling](Cohesion and Coupling)
+    - tell me about the concept of [Cohesion and Coupling](Cohesion and Coupling)
+- intent: ask_object_oriented_modeling
+  examples: |
+    - what is [Object Oriented Modeling](Object-Oriented Modeling) in c#
+    - elaborate [Object Oriented Modeling](Object-Oriented Modeling)
+    - explain the concept of [Object Oriented Modeling](Object-Oriented Modeling) in programming
+    - explain the concept of [Object Oriented Modeling](Object-Oriented Modeling)
+    - what are [Object Oriented Modeling](Object-Oriented Modeling)
+    - can you help me with [Object Oriented Modeling](Object-Oriented Modeling)
+    - i want to learn about [Object Oriented Modeling](Object-Oriented Modeling)
+    - describe [Object Oriented Modeling](Object-Oriented Modeling)
+    - define [Object Oriented Modeling](Object-Oriented Modeling)
+    - could you elaborate the concept of [Object Oriented Modeling](Object-Oriented Modeling)
+    - tell me about the concept of [Object Oriented Modeling](Object-Oriented Modeling)
+- intent: ask_uml_notation
+  examples: |
+    - what is [UML Notation](UML Notation) in c#
+    - elaborate [UML Notation](UML Notation)
+    - explain the concept of [UML Notation](UML Notation) in programming
+    - explain the concept of [UML Notation](UML Notation)
+    - what are [UML Notation](UML Notation)
+    - can you help me with [UML Notation](UML Notation)
+    - i want to learn about [UML Notation](UML Notation)
+    - describe [UML Notation](UML Notation)
+    - define [UML Notation](UML Notation)
+    - could you elaborate the concept of [UML Notation](UML Notation)
+    - tell me about the concept of [UML Notation](UML Notation)
+- intent: ask_design_patterns
+  examples: |
+    - what is [Design Pattern](Design Patterns) in c#
+    - elaborate [Design Patterns](Design Patterns)
+    - explain the concept of [Design Patterns](Design Patterns) in programming
+    - explain the concept of [Design Patterns](Design Patterns)
+    - what are [Design Patterns](Design Patterns)
+    - can you help me with [Design Patterns](Design Patterns)
+    - i want to learn about [Design Patterns](Design Patterns)
+    - describe [Design Pattern](Design Patterns)
+    - define [Design Patterns](Design Patterns)
+    - could you elaborate the concept of [Design Patterns](Design Patterns)
+    - tell me about the concept of [Design Patterns](Design Patterns)
+- intent: ask_stack
+  examples: |
+    - what is [stack](stack) in c#
+    - elaborate [stack](stack)
+    - explain the concept of [stack](stack) in programming
+    - explain the concept of [stack](stack)
+    - what are [stack](stack)
+    - can you help me with [stack](stack)
+    - i want to learn about [stack](stack)
+    - describe [stack](stack)
+    - define [stack](stack)
+    - could you elaborate the concept of [stack](stack)
+    - tell me about the concept of [stack](stack)
+- intent: ask_queue
+  examples: |
+    - what is [queue](queue) in c#
+    - elaborate [queue](queue)
+    - explain the concept of [queue](queue) in programming
+    - explain the concept of [queue](queue)
+    - what are [queue](queue)
+    - can you help me with [queue](queue)
+    - i want to learn about [queue](queue)
+    - describe [queue](queue)
+    - define [queue](queue)
+    - could you elaborate the concept of [queue](queue)
+    - tell me about the concept of [queue](queue)
+- intent: ask_keyword
+  examples: |
+    - what is [keyword](keyword) in c#
+    - elaborate [keyword](keyword)
+    - explain the concept of [keyword](keyword) in programming
+    - explain the concept of [keywords](keyword)
+    - what are [keyword](keyword)
+    - can you help me with [keyword](keyword)
+    - i want to learn about [keyword](keyword)
+    - describe [keyword](keyword)
+    - define [keyword](keyword)
+    - could you elaborate the concept of [keyword](keyword)
+    - tell me about the concept of [keyword](keyword)
+- intent: ask_integer
+  examples: |
+    - what is [integer](integer) in c#
+    - elaborate [integer](integer)
+    - explain the concept of [integer](integer) in programming
+    - explain the concept of [integer](integer)
+    - what are [integer](integer)
+    - can you help me with [integer](integer)
+    - i want to learn about [integer](integer)
+    - describe [integer](integer)
+    - define [integer](integer)
+    - could you elaborate the concept of [integer](integer)
+    - tell me about the concept of [integer](integer)
+- intent: ask_float
+  examples: |
+    - what is [float](float) in c#
+    - elaborate [float](float)
+    - explain the concept of [float](float) in programming
+    - explain the concept of [float](float)
+    - what are [float](float)
+    - can you help me with [float](float)
+    - i want to learn about [float](float)
+    - describe [float](float)
+    - define [float](float)
+    - could you elaborate the concept of [float](float)
+    - tell me about the concept of [float](float)

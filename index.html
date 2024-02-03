@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+</head>
+<body>
+<img src="Wallpaper.png" alt="image">
+<style>
+img {
+  width: 100%;
+  height: 97vh;}
+</style>
+<style>
+    .rw-conversation-container .rw-header{background-color: #164B60;} .rw-title{color:rgb(211, 218, 223);} .rw-messages-container{background-color: #001728 ;} .rw-message .rw-client{background-color: #1D5B79;} .rw-launcher {background-color: #164B60;} .rw-conversation-container .rw-sender {background-color: #164B60;} .rw-conversation-container .rw-new-message {background-color: #164B60; color: rgb(211, 218, 223);} .rw-conversation-container .rw-send {background-color: #164B60;}
+    .rw-conversation-container .rw-send .rw-send-icon {
+    fill: rgb(211, 218, 223);} .rw-conversation-container .rw-send .rw-send-icon-ready {
+    fill: rgb(211, 218, 223);}
+</style>
+    <script>!(function () {
+        let e = document.createElement("script"),
+          t = document.head || document.getElementsByTagName("head")[0];
+        (e.src =
+          "https://cdn.jsdelivr.net/npm/rasa-webchat@1.x.x/lib/index.js"),
+         
+          (e.async = !0),
+          (e.onload = () => {
+            window.WebChat.default(
+              {
+                initPayload: "/greet",
+                customData: { language: "en" },
+                socketUrl: "http://localhost:5005",
+                title: "Educational ChatBot",
+                subtitle: "C# Conceptual Guide",
+                // add other props here
+              },
+              null
+            );
+          }),
+          t.insertBefore(e, t.firstChild);
+      })();
+  window.onload = function () {
+      window.localStorage.clear();
+  };
+</script>
+</body>
+</html>

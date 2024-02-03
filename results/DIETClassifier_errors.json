@@ -1,0 +1,98 @@
+[
+  {
+    "text": "what is .NET Framework in c#",
+    "entities": [
+      {
+        "start": 8,
+        "end": 22,
+        "value": ".NET Framework",
+        "entity": ".NET Framework"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "explain the concept of .NET Framework",
+    "entities": [
+      {
+        "start": 23,
+        "end": 37,
+        "value": ".NET Framework",
+        "entity": ".NET Framework"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "what are .NET Frameworks",
+    "entities": [
+      {
+        "start": 9,
+        "end": 24,
+        "value": ".NET Frameworks",
+        "entity": ".NET Framework"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "can you help me with .NET Framework",
+    "entities": [
+      {
+        "start": 21,
+        "end": 35,
+        "value": ".NET Framework",
+        "entity": ".NET Framework"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "i want to learn about .NET Framework",
+    "entities": [
+      {
+        "start": 22,
+        "end": 36,
+        "value": ".NET Framework",
+        "entity": ".NET Framework"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "describe .NET Runtime",
+    "entities": [
+      {
+        "start": 9,
+        "end": 21,
+        "value": ".NET Runtime",
+        "entity": ".NET Framework"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "could you elaborate the concept of .NET Framework",
+    "entities": [
+      {
+        "start": 35,
+        "end": 49,
+        "value": ".NET Framework",
+        "entity": ".NET Framework"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "tell me about the concept of .NET Framework",
+    "entities": [
+      {
+        "start": 29,
+        "end": 43,
+        "value": ".NET Framework",
+        "entity": ".NET Framework"
+      }
+    ],
+    "predicted_entities": []
+  }
+]

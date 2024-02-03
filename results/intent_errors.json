@@ -1,0 +1,18 @@
+[
+  {
+    "text": "what is C++",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "ask_constructors",
+      "confidence": 0.04794437438249588
+    }
+  },
+  {
+    "text": "what is java",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "ask_constructors",
+      "confidence": 0.0387415736913681
+    }
+  }
+]
